@@ -1,0 +1,68 @@
+.container {
+    min-height: 100vh;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.backBtn {
+    background: none;
+    border: none;
+    color: var(--write);
+    font-size: 2.4rem;
+    margin-right: 1.6rem;
+    cursor: pointer;
+}
+
+.content {
+    padding: 2.4rem;
+    flex: 1;
+    overflow-y: auto;
+}
+
+section {
+    margin-bottom: 2.4rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+    color: var(--write);
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.5;
+    margin-bottom: 1.2rem;
+    color: #333;
+}
+
+ul {
+    padding-left: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+li {
+    margin-bottom: 0.6rem;
+}
+
+.card {
+    background: var(--write);
+    padding: 1.2rem 1.6rem;
+    border-radius: 0.8rem;
+    box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+}
+
+.logoSection {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+.logo {
+    max-width: 15rem;
+    opacity: 0.8;
+}

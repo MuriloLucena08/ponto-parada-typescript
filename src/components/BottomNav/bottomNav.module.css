@@ -1,0 +1,29 @@
+.bottomNav {
+    height: 60px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    /* box-shadow: 0 -2px 5px rgba(0,0,0,0.1); */
+}
+
+/* Simulate curved nav bar - simplified for CSS only */
+.navItem {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navItem.active {
+    color: var(--white);
+    /* background-color: var(--secondary-color); */
+}
+
+.icon {
+    font-size: 24px;
+}

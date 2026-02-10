@@ -1,0 +1,258 @@
+.container {
+    min-height: 100vh;
+    background: linear-gradient(180deg, var(--primary-color) 0%, #4facfe 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.backBtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 32px;
+    margin-right: 16px;
+    cursor: pointer;
+}
+
+.content {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.1);
+    /* Frosted glass effect */
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+    overflow-y: auto;
+    color: white;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.mapPreview {
+    width: 100%;
+    height: 200px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin: 20px 0;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.switches {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.switchRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    /* background: rgba(0,0,0,0.1); */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    cursor: pointer;
+}
+
+.toggle {
+    width: 50px;
+    height: 28px;
+    background-color: #ccc;
+    border-radius: 14px;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.toggle.active {
+    background-color: var(--secondary-color);
+}
+
+.knob {
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: transform 0.3s;
+}
+
+.toggle.active .knob {
+    transform: translateX(22px);
+}
+
+.dateInput {
+    width: 100%;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 16px;
+    color-scheme: dark;
+    /* Adapts calendar to dark mode if supported */
+}
+
+.divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+}
+
+.abrigoCard {
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 15px;
+    color: #333;
+    /* Dark text on white card */
+}
+
+.cardHeader {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+.removeBtn {
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.field {
+    margin-bottom: 12px;
+}
+
+.select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+.imagePicker {
+    margin-top: 5px;
+}
+
+.imageList {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.thumb {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    flex-shrink: 0;
+}
+
+.thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.removeImg {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.uploadBtn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.saveButton {
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 16px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.saveButton:disabled {
+    background-color: #999;
+}
+
+.headerRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.addButton {
+    background: none;
+    border: 1px solid white;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.fieldRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}

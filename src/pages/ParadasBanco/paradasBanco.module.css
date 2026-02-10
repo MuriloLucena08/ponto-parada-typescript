@@ -1,0 +1,31 @@
+.container {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.backBtn {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    z-index: 1000;
+    background: white;
+    border: none;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+}
